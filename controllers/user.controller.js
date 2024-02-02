@@ -1,7 +1,7 @@
-const {response, request} = require ('express') 
+const {response, request} = require('express') 
 
-const userGet = async(res=response,req=request)=>{
-    res.json({
+const userGet = async(req=request,res=response)=>{
+    res.status(200).json({
         message: 'ingreso al get'
     })
 }
